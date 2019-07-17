@@ -1,0 +1,26 @@
+{
+ "manifest_version": 2,
+ 
+ "name": "SEO Meta Insights",
+ 
+ "description": "A simple and easy to use meta data inspection tool for quick SEO insights.",
+ 
+ "version": "1.2",
+ 
+ "author": "Digitopia",
+ 
+ "browser_action": {
+   "default_icon": "logo1.png",
+   "default_title": "SEO Meta Insights ",
+   "default_popup": "popup.html"
+ },
+ 
+ "content_scripts":[
+   {
+     "matches":["<all_urls>"],
+     "js":["jquery.js"]
+   }  
+  ],
+ 
+ "permissions": ["activeTab", "storage", "<all_urls>", "tabs"]
+}
